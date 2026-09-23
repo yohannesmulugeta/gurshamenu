@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="t d">
+<title id="t">GurshaMenu</title>
+<desc id="d">A smartphone and restaurant menu inside a mesob-inspired basket.</desc>
+<defs>
+  <linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f28b25"/><stop offset="1" stop-color="#d94b0c"/></linearGradient>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5b45b"/><stop offset="1" stop-color="#b97a19"/></linearGradient>
+</defs>
+<rect width="160" height="160" rx="34" fill="#fff8ee"/>
+<path d="M44 91h72l-9 39H53z" fill="#211d19"/>
+<path d="M49 94h62l-4 10H53z" fill="url(#o)"/>
+<path d="M55 108l13 12 12-12 12 12 13-12" fill="none" stroke="#e65d12" stroke-width="7" stroke-linejoin="round"/>
+<path d="M54 131h52" stroke="url(#g)" stroke-width="7" stroke-linecap="round"/>
+<rect x="51" y="27" width="58" height="71" rx="11" fill="#211d19"/>
+<rect x="58" y="35" width="44" height="55" rx="6" fill="#fff"/>
+<path d="M67 62h26" stroke="url(#o)" stroke-width="6" stroke-linecap="round"/>
+<path d="M72 57c1-9 16-9 17 0" fill="none" stroke="#e65d12" stroke-width="5" stroke-linecap="round"/>
+<path d="M67 73h7m6 0h17m-30 9h7m6 0h17" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+<path d="M73 20c-5-7 7-10 2-17m11 18c-5-8 7-10 2-17" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+</svg>
