@@ -8,11 +8,18 @@
     <meta property="og:title" content="GurshaMenu — Your menu. Always fresh." />
     <meta property="og:description" content="One permanent QR code with a restaurant menu you can update anytime." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yohannesmulugeta.github.io/gurshamenu/" />
-    <link rel="icon" type="image/svg+xml" href="/gurshamenu/gurshamenu-mark.svg" />
+    <meta property="og:url" content="https://menu.admakidigital.com/" />
+    <link rel="icon" type="image/svg+xml" href="./gurshamenu-mark.svg" />
     <title>GurshaMenu — Your menu. Always fresh.</title>
   </head>
   <body>
+    <script>
+      // Preserve every existing Menu-Go QR code and saved admin URL.
+      // Browser fragments are invisible to Cloudflare routing, so redirect client-side.
+      if (window.location.hash.startsWith('#/')) {
+        window.location.replace('https://app.admakidigital.com/' + window.location.search + window.location.hash);
+      }
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
