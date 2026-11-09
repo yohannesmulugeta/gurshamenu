@@ -5,10 +5,10 @@ import {
 } from "lucide-react";
 import { QRCodeSVG } from "qrcode.react";
 
-const menuGoDemo = "https://yohannesmulugeta.github.io/Menu-Go/#/r/abol-coffee";
-const menuGoLogin = "https://yohannesmulugeta.github.io/Menu-Go/#/login";
-const managerPreview = "https://yohannesmulugeta.github.io/Menu-Go/#/preview-manager";
-const adminPreview = "https://yohannesmulugeta.github.io/Menu-Go/#/preview-admin";
+const menuGoDemo = "https://app.admakidigital.com/#/r/abol-coffee";
+const menuGoLogin = "https://app.admakidigital.com/#/login";
+const managerPreview = "https://app.admakidigital.com/#/preview-manager";
+const adminPreview = "https://app.admakidigital.com/#/preview-admin";
 
 function Wordmark({ light=false }: { light?: boolean }) {
   return <span className={`wordmark ${light ? "light" : ""}`}>
@@ -237,7 +237,7 @@ export default function App() {
         <Wordmark light/>
         <h2>Your menu shouldn't become outdated<br/>the moment you print it.</h2>
         <p>Put your restaurant on GurshaMenu and update your menu whenever you need.</p>
-        <div><a href={menuGoDemo} className="button light">See live demo</a><a href="mailto:yohannesmulugeta084@gmail.com" className="button outline-light">Contact GurshaMenu</a></div>
+        <div><a href={menuGoDemo} className="button light">See live demo</a><a href="mailto:yohannesmulugegta084@gmail.com" className="button outline-light">Contact GurshaMenu</a></div>
         <small>Restaurant setup and menu onboarding can be handled for you.</small>
       </section>
     </main>
@@ -246,7 +246,7 @@ export default function App() {
       <div><Wordmark/><p>Hospitality, digitally served.</p></div>
       <div><b>Product</b><a href="#product">Features</a><a href="#demo">Demo</a><a href="#pricing">Pricing</a></div>
       <div><b>Account</b><a href={menuGoLogin}>Sign in</a></div>
-      <div><b>Company</b><a href="mailto:yohannesmulugeta084@gmail.com">Contact</a><span>Privacy</span><span>Terms</span></div>
+      <div><b>Company</b><a href="mailto:yohannesmulugegta084@gmail.com">Contact</a><span>Privacy</span><span>Terms</span></div>
       <div className="footer-bottom">© 2026 GurshaMenu. All rights reserved.</div>
     </footer>
   </div>;
