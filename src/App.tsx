@@ -11,10 +11,7 @@ const managerPreview = "https://app.admakidigital.com/#/preview-manager";
 const adminPreview = "https://app.admakidigital.com/#/preview-admin";
 
 function Wordmark({ light=false }: { light?: boolean }) {
-  return <span className={`wordmark ${light ? "light" : ""}`}>
-    <img src={`${import.meta.env.BASE_URL}gurshamenu-mark.svg`} alt="" />
-    <strong>Gursha<span>Menu</span></strong>
-  </span>;
+  return <span className={`wordmark ${light ? "light" : ""}`}><img src={`${import.meta.env.BASE_URL}brand/admaki-menu${light ? "-white" : ""}.svg`} alt="ADMAKI Menu" /></span>;
 }
 
 const demoMenu = [
@@ -40,7 +37,7 @@ export default function App() {
         </div>
         <div className="nav-actions">
           <a href={menuGoLogin} className="text-link">Sign in</a>
-          <a href="#contact" className="button small">Get GurshaMenu <ArrowRight size={16}/></a>
+          <a href="#contact" className="button small">Get started <ArrowRight size={16}/></a>
         </div>
       </nav>
     </header>
@@ -52,7 +49,7 @@ export default function App() {
           <h1>Your menu.<br/><em>Always fresh.</em></h1>
           <p className="lead">Create a beautiful digital restaurant menu, update prices instantly, and let guests access everything through one permanent QR code.</p>
           <div className="hero-actions">
-            <a href="#contact" className="button">Get GurshaMenu <ArrowRight size={18}/></a>
+            <a href="#contact" className="button">Get started <ArrowRight size={18}/></a>
             <a href={menuGoDemo} className="button secondary">View live demo</a>
           </div>
           <div className="proof-line">
@@ -99,7 +96,7 @@ export default function App() {
 
       <section className="section problem">
         <div className="section-heading">
-          <p className="eyebrow">WHY GURSHAMENU</p>
+          <p className="eyebrow">WHY ADMAKI MENU</p>
           <h2>Printed menus become outdated.<br/>Your QR shouldn't.</h2>
         </div>
         <div className="compare">
@@ -110,7 +107,7 @@ export default function App() {
             <p>Small changes turn into recurring printing work and unnecessary operational friction.</p>
           </article>
           <article className="compare-card new">
-            <span className="kicker">THE GURSHAMENU WAY</span>
+            <span className="kicker">THE ADMAKI MENU WAY</span>
             <h3>Change once. Everyone sees it.</h3>
             <div className="price-change"><span>250 ETB</span><ArrowRight/><strong>280 ETB</strong><Check/></div>
             <p>Update a price, hide a sold-out item or add a photo. The restaurant's QR stays the same.</p>
@@ -125,7 +122,7 @@ export default function App() {
           <p>Three simple layers keep the experience easy for everyone.</p>
         </div>
         <div className="steps">
-          <article><span>01</span><Store/><h3>We set up the restaurant</h3><p>GurshaMenu creates the restaurant profile, menu, permanent public link and QR-ready experience.</p></article>
+          <article><span>01</span><Store/><h3>We set up the restaurant</h3><p>ADMAKI Menu creates the restaurant profile, menu, permanent public link and QR-ready experience.</p></article>
           <article><span>02</span><Pencil/><h3>The manager stays in control</h3><p>Prices, dishes, photos, availability and opening hours stay editable from one dashboard.</p></article>
           <article><span>03</span><Smartphone/><h3>Guests simply scan</h3><p>No app. No account. The latest restaurant menu opens directly on the customer's phone.</p></article>
         </div>
@@ -135,7 +132,7 @@ export default function App() {
         <div className="demo-copy">
           <p className="eyebrow">INTERACTIVE PRODUCT DEMO</p>
           <h2>See the update happen.</h2>
-          <p>Change the demo price. The customer view updates immediately — the same idea that makes GurshaMenu useful inside a real restaurant.</p>
+          <p>Change the demo price. The customer view updates immediately — the same idea that makes ADMAKI Menu useful inside a real restaurant.</p>
           <div className="editor-card">
             <div className="editor-item"><span className="food-thumb"><UtensilsCrossed/></span><div><b>Cappuccino</b><small>Coffee</small></div></div>
             <label>Price <input type="number" min="0" value={price} onChange={e=>setPrice(Number(e.target.value))}/><span>ETB</span></label>
@@ -143,7 +140,7 @@ export default function App() {
           </div>
         </div>
         <div className="demo-browser">
-          <div className="browser-top"><span/><span/><span/><small>gurshamenu.com/abol</small></div>
+          <div className="browser-top"><span/><span/><span/><small>app.admakidigital.com</small></div>
           <div className="demo-restaurant">
             <div className="demo-brand"><span>AC</span><div><b>Abol Coffee</b><small>Digital menu</small></div></div>
             <div className={`demo-dish ${available?"":"sold"}`}>
@@ -165,7 +162,7 @@ export default function App() {
             <ul><li><Check/>Prices and descriptions</li><li><Check/>Photos and categories</li><li><Check/>Available / unavailable</li></ul>
           </div>
           <div className="dashboard-mock">
-            <div className="dash-side"><Wordmark/><span className="active">Menu</span><span>Categories</span><span>Hours</span><span>Analytics</span></div>
+            <div className="dash-side"><img className="dash-brand-symbol" src={`${import.meta.env.BASE_URL}brand/admaki-symbol.svg`} alt="ADMAKI Menu" /><span className="active">Menu</span><span>Categories</span><span>Hours</span><span>Analytics</span></div>
             <div className="dash-main"><small>ABOL COFFEE</small><h3>Menu items</h3>
               {["Cappuccino","Cheese Croissant","Fresh Juice"].map((name,i)=><div className="dash-item" key={name}><span className="food-dot"/><b>{name}</b><small>{[150,210,190][i]} ETB</small><i>Active</i></div>)}
             </div>
@@ -179,17 +176,17 @@ export default function App() {
             <p>The public restaurant link stays stable while managers keep the content fresh behind it.</p>
             <ul><li><Check/>Table cards</li><li><Check/>Counter stickers</li><li><Check/>Printed and social materials</li></ul>
           </div>
-          <div className="qr-poster"><img src={`${import.meta.env.BASE_URL}gurshamenu-mark.svg`} alt="GurshaMenu"/><QRCodeSVG value={menuGoDemo} size={160}/><h3>Scan our menu</h3><p>No download required</p></div>
+          <div className="qr-poster"><img src={`${import.meta.env.BASE_URL}brand/admaki-symbol.svg`} alt="ADMAKI Menu"/><QRCodeSVG value={menuGoDemo} size={160}/><h3>Scan our menu</h3><p>No download required</p></div>
         </div>
       </section>
 
       <section className="culture section">
         <div>
           <p className="eyebrow">OUR IDENTITY</p>
-          <h2>Born from a culture of sharing.<br/>Built for modern hospitality.</h2>
-          <p>“Gursha” represents sharing food and hospitality. GurshaMenu carries that spirit into a simple digital restaurant experience — modern first, with a subtle Ethiopian identity.</p>
+          <h2>Connected to your restaurant.<br/>Built for everyday service.</h2>
+          <p>ADMAKI Menu brings ADMAKI Digital’s practical approach to restaurant technology. Give guests a clear menu and give your team one place to keep it current.</p>
         </div>
-        <img src={`${import.meta.env.BASE_URL}gurshamenu-mark.svg`} alt="GurshaMenu brand mark"/>
+        <img src={`${import.meta.env.BASE_URL}brand/admaki-symbol.svg`} alt="ADMAKI Menu brand mark"/>
       </section>
 
       <section className="section">
@@ -210,8 +207,8 @@ export default function App() {
       <section id="demo" className="demo-hub section">
         <div>
           <p className="eyebrow">EXPLORE THE PRODUCT</p>
-          <h2>See GurshaMenu from every side.</h2>
-          <p>The working prototype remains in the original Menu-Go application while the new GurshaMenu brand is developed separately.</p>
+          <h2>See ADMAKI Menu from every side.</h2>
+          <p>Explore the customer menu and preview the tools available to restaurant teams.</p>
         </div>
         <div className="demo-cards">
           <a href={menuGoDemo}><Smartphone/><div><span>CUSTOMER</span><h3>Abol Coffee menu</h3><p>See the live guest experience.</p></div><ArrowRight/></a>
@@ -224,7 +221,7 @@ export default function App() {
         <div className="section-heading centered">
           <p className="eyebrow">PRICING</p>
           <h2>Simple plans for growing restaurants.</h2>
-          <p>Commercial pricing will be finalized after early restaurant pilots. No fake launch prices.</p>
+          <p>Tell us about your restaurant, menu setup and support needs. We’ll discuss a suitable arrangement with you.</p>
         </div>
         <div className="price-grid">
           <article><span>STARTER</span><h3>Digital Menu</h3><p>For restaurants that need a polished QR menu and easy updates.</p><ul><li><Check/>Permanent QR menu</li><li><Check/>Menu manager</li><li><Check/>Restaurant profile</li><li><Check/>Opening hours</li></ul><a href="#contact" className="button secondary">Talk to us</a></article>
@@ -236,8 +233,8 @@ export default function App() {
       <section id="contact" className="final-cta section">
         <Wordmark light/>
         <h2>Your menu shouldn't become outdated<br/>the moment you print it.</h2>
-        <p>Put your restaurant on GurshaMenu and update your menu whenever you need.</p>
-        <div><a href={menuGoDemo} className="button light">See live demo</a><a href="mailto:yohannesmulugegta084@gmail.com" className="button outline-light">Contact GurshaMenu</a></div>
+        <p>Put your restaurant on ADMAKI Menu and update your menu whenever you need.</p>
+        <div><a href={menuGoDemo} className="button light">See live demo</a><a href="mailto:sales@admakidigital.com" className="button outline-light">Contact ADMAKI Menu</a></div>
         <small>Restaurant setup and menu onboarding can be handled for you.</small>
       </section>
     </main>
@@ -246,8 +243,8 @@ export default function App() {
       <div><Wordmark/><p>Hospitality, digitally served.</p></div>
       <div><b>Product</b><a href="#product">Features</a><a href="#demo">Demo</a><a href="#pricing">Pricing</a></div>
       <div><b>Account</b><a href={menuGoLogin}>Sign in</a></div>
-      <div><b>Company</b><a href="mailto:yohannesmulugegta084@gmail.com">Contact</a><span>Privacy</span><span>Terms</span></div>
-      <div className="footer-bottom">© 2026 GurshaMenu. All rights reserved.</div>
+      <div><b>Company</b><a href="mailto:sales@admakidigital.com">Contact</a><a href="https://admakidigital.com">ADMAKI Digital ↗</a><a href="https://nfc.admakidigital.com">ADMAKI Digital Card ↗</a></div>
+      <div className="footer-bottom">© 2026 ADMAKI Menu / An ADMAKI Digital service.</div>
     </footer>
   </div>;
 }

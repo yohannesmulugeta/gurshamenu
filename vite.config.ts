@@ -10,5 +10,6 @@ const isCloudflare = Boolean(
 
 export default defineConfig({
   plugins: [react()],
+  server: { allowedHosts: ['terminal.local'] },
   base: isCloudflare ? "/" : "/gurshamenu/",
 });

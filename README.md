@@ -1,36 +1,9 @@
-# GurshaMenu
+# ADMAKI Menu
 
-GurshaMenu is a separate restaurant-tech brand and website built alongside the existing Menu-Go prototype.
+The restaurant menu service website for ADMAKI Digital. Public site: https://menu.admakidigital.com/ . The working menu and account application stays at https://app.admakidigital.com/ . Existing hash-based QR links redirect to the application while preserving the path and query.
 
-## Positioning
+## Development
+`npm ci` then `npm run dev`. `npm run build` creates `dist/`. Set `CF_PAGES=1` for a domain-root Cloudflare build; the default `/gurshamenu/` base preserves the existing GitHub Pages URL. Repository and deployment names remain stable.
 
-**Your menu. Always fresh.**
-
-GurshaMenu helps restaurants maintain a modern QR menu without reprinting whenever prices, availability, photos or restaurant information changes.
-
-## Current architecture
-
-- This repository: GurshaMenu brand + commercial marketing website.
-- Existing Menu-Go repository: working product prototype, Abol Coffee demo, manager preview, admin preview and Supabase-backed application.
-- The Menu-Go repository has **not** been deleted or replaced.
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
-
-## Deployment
-
-The repository includes a GitHub Pages workflow and uses the Vite base path `/gurshamenu/`.
-
-## Next product phase
-
-After the GurshaMenu visual direction is approved, the working application/authentication can be migrated into this repository in a controlled phase without breaking the existing Menu-Go deployment or its current QR links.
+## Identity
+Connected AD artwork, Manrope typography, navy #0B1220, blue #2563EB and warm white #FAFAF8. Logos and share preview are in public/brand; local web fonts include OFL licenses. Restaurant names and data live in the separate application.
