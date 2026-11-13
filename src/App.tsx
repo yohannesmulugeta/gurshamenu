@@ -45,9 +45,9 @@ export default function App() {
     <main id="top">
       <section className="hero section-shell">
         <div className="hero-copy">
-          <p className="eyebrow">SMARTER RESTAURANT MENUS</p>
+          <p className="eyebrow">QR RESTAURANT MENUS · ETHIOPIA</p>
           <h1>Your menu.<br/><em>Always fresh.</em></h1>
-          <p className="lead">Create a beautiful digital restaurant menu, update prices instantly, and let guests access everything through one permanent QR code.</p>
+          <p className="lead">ADMAKI Menu creates QR restaurant menus for cafés, restaurants and hotels in Addis Ababa and across Ethiopia. Update your online menu and let guests open it through one permanent QR code.</p>
           <div className="hero-actions">
             <a href="#contact" className="button">Get started <ArrowRight size={18}/></a>
             <a href={menuGoDemo} className="button secondary">View live demo</a>
@@ -230,6 +230,7 @@ export default function App() {
         </div>
       </section>
 
+      <section className="section" aria-labelledby="faq-heading"><div className="section-heading"><p className="eyebrow">QUESTIONS BEFORE YOU START</p><h2 id="faq-heading">QR menus for Ethiopian restaurants.</h2></div><h3>Do guests need an app?</h3><p>No. Guests scan the QR code and open the menu in their phone browser. Internet is required to load the online menu.</p><h3>Can we change prices without replacing the QR code?</h3><p>Yes. Your team updates the online menu while the restaurant link and QR code stay the same.</p><h3>How do we get started?</h3><p>Send your restaurant details, categories, prices and photos. We agree setup, editing access and support before onboarding.</p><p><a href="https://admakidigital.com/services/qr-restaurant-menus-ethiopia">QR menu setup in Ethiopia ↗</a></p></section>
       <section id="contact" className="final-cta section">
         <Wordmark light/>
         <h2>Your menu shouldn't become outdated<br/>the moment you print it.</h2>
